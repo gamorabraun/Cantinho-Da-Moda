@@ -1,0 +1,478 @@
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #e8f4f8;
+  color: #1b1b1b;
+}
+
+/*ícone de pesquisa*/
+
+.aolado {
+  display: flex;
+  gap: 15px;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+}
+
+.acoes a {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/*HEADER E MENU*/
+.user-icon {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: pointer;
+  padding-left: 350px;
+    }
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #fdfeff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+
+.top {
+  display: flex;
+  /* Deixa dois objetos na mesma linha, porém afastados*/
+  /*Define o alinhamento dos elementos*/
+  align-items: center;
+  background-color: #000000;
+  /*Tamanho da imagem dentro do espaço "padding"*/
+  padding: 10px 10px;
+}
+
+.top img {
+  /*Ajuste somente da imagem dentro do "padding"*/ 
+  width: 200px;
+  height: 100px;
+  padding-right: 70px;
+}
+
+
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  width: 1500px;
+  max-width: 500px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /*Controla o que acontece com o conteúdo que ultrapassa os limites de um elemento*/
+  overflow: hidden;
+  background-color: white;
+  }
+
+  .barra-pesquisa input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  /*É um contorno que aparece ao redor de um elemento quando você clica ou seleciona um campo*/
+  outline: none;
+  padding: 0 18px;
+   font-size: 16px;
+  }
+
+
+.listaMenu {
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000000;
+}
+
+.listaMenu a {
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+}
+
+.listaMenu a:hover {
+  color:rgb(173, 169, 166);
+}
+
+
+
+/*MAIN*/
+h2 {
+  text-align: center;
+}
+
+.content {
+  max-width: 2000px;
+  margin: 20px auto;
+  background: rgb(223, 217, 217);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 0%;
+}
+
+#logoBanner {
+  background: url(midia/banner\ oficial.png) center/cover;
+  color: rgb(255, 253, 253);
+  padding: 150px 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.botao:hover {
+  background-color: rgb(173, 169, 166);
+}
+
+
+.tituloQuadro {
+  text-align: center;
+  color: #000000;
+  padding-top: 30px;
+}
+
+.areaProdutos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.produto {
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.07);
+}
+
+.produto img {
+  width: 160px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.tituloProduto {
+  margin: 10px 0;
+}
+
+
+
+/*Bolinha que indica a cor do produto*/
+/*BOLINHAS*/
+.bolinhaBranca {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ebe3e3;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaLaranja {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #f06d16;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaVermelha {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #f01616;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaRosa {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #f016cc;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaRosaC {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #d16cc0;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaPreta {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #0c090b;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaAmarela {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #dad182;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaCinza {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #a09e9f;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaCac {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bd794b;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaAzul {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #2d9cdb;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaAzulM {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #11367a;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaAzulC {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #446aaf;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaVerdeM {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #3d583a;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaVerde {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #75bd6d;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaLilas {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #b07cc9;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.bolinhaMarrom {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #6b4834;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+/*FIM DAS BOLINHAS*/
+
+
+
+
+.precoNovo {
+    color: rgb(7, 8, 8);
+    font-weight: bold;
+    font-size: large;
+}
+
+.produto a {
+    display: inline-block;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+#sobre {
+    margin-top: 60px;
+    padding: 20px;
+    background:#474444;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+#contato {
+     margin-top: 30px;
+    padding: 20px;
+    background:#474444;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pagamento {
+    padding-top: 350px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+/*rodapé*/
+#rodape {
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+.lista:hover {
+    color: rgb(173, 169, 166);
+}
+
+
+/*PÁGINA DE CADASTRO*/
+/*Regra para main*/
+#cadastro {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(223, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*DIV principal*/
+.card {
+    background: rgb(219, 221, 226);
+    border-radius: 15px;
+    padding: 32px;
+    width: 300px;
+    max-width: 350px;
+    box-shadow: 5px 5px 30px black;
+    justify-content: center;
+}
+
+/*Título que está em "p"*/
+.card p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+    /*deixa a frase em negrito*/
+    font-weight: bold;
+    text-align: center;
+}
+
+/*regra do FIELD principal*/
+.field {
+    margin-bottom: 25px;
+}
+
+/*regra da etiqueta do e-mail*/
+.field label {
+    margin-bottom: 2px;
+    display: flex;
+    font-size: medium;
+    color: black;
+    font-size: medium;
+}
+
+.field input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #dbc7ba00;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background: #474444;
+    color: rgb(255, 254, 254);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background: gray ;
+}
+
+#cadastre-se {
+    text-decoration: none;
+    color: rgb(201, 32, 32);
+}
